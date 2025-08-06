@@ -5,22 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>李芳珊 - 個人履歷</title>
   <style>
-    /* 基本樣式 */
-    body { font-family: Arial, sans-serif; line-height: 1.6; background:#f9f9f9; color:#333; margin:0; padding:0; }
-    header { background:#007acc; color:#fff; text-align:center; padding:2rem 1rem; }
-    .photo-section { display:flex; justify-content:center; align-items:center; margin-bottom:1rem; }
-    .profile-photo { width:150px; height:150px; object-fit:contain; background:#fff; border-radius:50%; border:4px solid white; box-shadow:0 0 8px rgba(0,0,0,0.2); }
-    .intro-section h1 { margin:0.5rem 0 0.2rem; font-size:2rem; }
-    .intro-section p { margin:0; font-size:1.1rem; }
-    .container { max-width:800px; margin:2rem auto; background:#fff; padding:2rem; box-shadow:0 0 10px rgba(0,0,0,0.1); }
-    h2 { color:#007acc; margin-top:2rem; }
-    ul { padding-left:1.5rem; }
-    footer { text-align:center; padding:1rem; font-size:0.9rem; color:#777; }
-    a { color:#007acc; text-decoration:none; }
-    .qr-code { margin-top:1rem; text-align:center; }
-    .qr-code img { width:150px; margin-top:0.5rem; }
-    .project-section { margin-top:2rem; }
-    .project-section h2 { margin-top:0; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007acc;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .photo-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      background-color: white;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    .intro-section h1 {
+      margin: 0.5rem 0 0.2rem;
+      font-size: 2rem;
+    }
+
+    .intro-section p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #007acc;
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .qr-code {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .qr-code img {
+      width: 150px;
+      margin-top: 0.5rem;
+    }
+
+    .project-section {
+      margin-top: 2rem;
+    }
+
+    .project-section h2 {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -35,9 +108,48 @@
   </header>
 
   <div class="container">
-    <!-- 關於我 / 學歷 / 證照 ... 省略 -->
+    <section>
+      <h2>👩‍💼 關於我</h2>
+      <p>擁有臨床護理與醫務行政雙重經驗，擅長資料整合與分析，致力於提升醫療品質與效率。</p>
+    </section>
 
-    <!-- 新增專題介紹 -->
+    <section>
+      <h2>🎓 學歷</h2>
+      <ul>
+        <li>嶺東科技大學 企業管理系</li>
+        <li>美和科技大學 護理科</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📜 專業證照</h2>
+      <ul>
+        <li>護理師執照</li>
+        <li>ICD-10-CM/PCS 疾病分類認證</li>
+        <li>Power BI 商業分析課程</li>
+        <li>Python 與 R 統計分析課程</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💼 工作經歷</h2>
+      <ul>
+        <li>台中榮總 急診專任助理(緊急醫療區域聯防)</li>
+        <li>醫務部：病歷、健保、資料統整</li>
+        <li>婦幼科臨床護理師</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📊 技能</h2>
+      <ul>
+        <li>Power BI 資料視覺化</li>
+        <li>Python / R 資料分析</li>
+        <li>MySQL 資料庫管理</li>
+        <li>Git / GitHub 專案版本控制</li>
+      </ul>
+    </section>
+
     <section class="project-section">
       <h2>📂 專題：Lung Cancer Risk in 25 Countries</h2>
       <p>這是一個探索全球 25 個國家肺癌風險的資料專題，結合資料視覺化與分析，協助瞭解不同國家風險分佈。</p>
@@ -48,7 +160,6 @@
       </div>
     </section>
 
-    <!-- 聯絡我 + 原有 QR Code -->
     <section>
       <h2>📞 聯絡我</h2>
       <ul>
