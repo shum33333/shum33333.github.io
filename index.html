@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -17,18 +18,35 @@
     header {
       background-color: #007acc;
       color: #fff;
-      padding: 2rem;
       text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .photo-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
     }
 
     .profile-photo {
       width: 150px;
       height: 150px;
-      object-fit: cover;
+      object-fit: contain;
+      background-color: white;
       border-radius: 50%;
       border: 4px solid white;
-      margin-bottom: 1rem;
       box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    .intro-section h1 {
+      margin: 0.5rem 0 0.2rem;
+      font-size: 2rem;
+    }
+
+    .intro-section p {
+      margin: 0;
+      font-size: 1.1rem;
     }
 
     .container {
@@ -59,21 +77,33 @@
       color: #007acc;
       text-decoration: none;
     }
+
+    .qr-code {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .qr-code img {
+      width: 150px;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="shan.jpg" alt="李芳珊大頭照" class="profile-photo">
-    <h1>李芳珊</h1>
-    <p>醫務行政 & 資料分析 專業人員</p>
+    <div class="photo-section">
+      <img src="shan_final_square.jpg" alt="李芳珊大頭照" class="profile-photo">
+    </div>
+    <div class="intro-section">
+      <h1>李芳珊</h1>
+      <p>醫務行政 & 資料分析 專業人員</p>
+    </div>
   </header>
 
   <div class="container">
     <section>
       <h2>👩‍💼 關於我</h2>
-      <p>
-        擁有臨床護理與醫務行政雙重經驗，擅長資料整合與分析，致力於提升醫療品質與效率。
-      </p>
+      <p>擁有臨床護理與醫務行政雙重經驗，擅長資料整合與分析，致力於提升醫療品質與效率。</p>
     </section>
 
     <section>
@@ -119,6 +149,10 @@
         <li>Email: shum33333@gmail.com</li>
         <li>GitHub: <a href="https://shum33333.github.io/" target="_blank">shum33333.github.io</a></li>
       </ul>
+      <div class="qr-code">
+        <p>📱 掃描 QR Code 查看我的履歷網站：</p>
+        <img src="github_qrcode.png" alt="履歷網站 QR Code">
+      </div>
     </section>
   </div>
 
